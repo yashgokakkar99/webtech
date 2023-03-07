@@ -1,0 +1,71 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+
+.nav{
+    background-color: purple;
+    color: white;
+    display: flex;
+}
+
+.nav ul{
+    display: flex;
+    justify-content:space-evenly;
+    height: 40px;
+    align-items: center;
+    width: 100%;
+}
+
+.nav ul li a{
+    text-decoration: none;
+}
+
+.nav ul li a{
+    color: white;
+}
+
+footer{
+    background-color: purple;
+    color: white;
+    text-align: center;
+}
+
+.served_stats ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.sections ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.served_stats ul li{
+    text-decoration: none;
+    color: red;
+}
+
+.sections ul li{
+    text-decoration: none;
+    color: green;
+}
+
+.recent{
+    display: flex;
+    margin: auto;
+}
+
+.main_con{
+    height: calc(100vh-58.4px);
+}
+
+.recent_seeker{
+    border:2px solid red;
+    padding: 20px;
+}
+.button{
+    border:2px solid red;
+}
