@@ -1,0 +1,100 @@
+<!-- <div class="sections">
+          <ul type="none">
+            <li>Health Care</li>
+            <li>Charity</li>
+            <li>Donation</li>
+            <li>Fund raising</li>
+            <li>Campaigns</li>
+          </ul>
+        </div> -->
+        <!-- <div class="frame">
+            <iframe src="https://www.ketto.org/" title="Ketto website" width="1500px"></iframe>
+        </div> -->
+        
+        <!-- <div class="recent">
+          <div class="recent_seeker">
+            <h1>Aditya Birla Hospital Pune</h1>
+            <h3>Name : Baburao Ganpatrao Apte</h3>
+            <h3>Disease : Blockage in viens</h3>
+            <h3>Doctor : Dr. Raju</h3>
+            <h3>Estimated Amount : 500000 &#8377;</h3>
+          </div>
+          <div class="button">
+            <button>Donate now</button>
+          </div>
+        </div> -->
+        <!-- <div class="served_stats">
+          <ul type="none">
+            <li>Funds raised : 10 cr +</li>
+            <li>Campaigns : 250 +</li>
+            <li>Client satisfaction : 80 %</li>
+          </ul>
+        </div> -->
+        <!-- <div class="form">
+          <p>Instant Donation :</p>
+          <form action="" method="POST">
+            <label for="name">Name : </label>
+            <input type="text" name="name" id="name" placeholder="Name" />
+            <label for="mbno">Contact no : </label>
+            <input
+              type="number"
+              name="mbno"
+              id="mbno"
+              placeholder="Mobile no."
+            />
+            <label for="email">Email : </label>
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <label for="don">Donation for : </label>
+            <select id="don" name="don">
+              <option value="Medical">Medical</option>
+              <option value="Charity">Charity</option>
+              <option value="Education">Education</option>
+              <option value="Campaigns">Campaigns</option>
+            </select>
+            <label for="amt">Donation amount (INR) : </label>
+            <input type="number" name="amt" id="amt" placeholder="Amount" />
+            <label for="pay">Payment options : </label>
+            <select id="pay" name="pay">
+              <option value="juspay">Juspay</option>
+              <option value="gpay">Google Pay</option>
+              <option value="bktrans">Bank transfer</option>
+            </select>
+            <input type="submit" value="Submit" />
+          </form>
+        </div> -->
+        <!-- <div class="table">
+             This is inline css
+          <b><p style="color:blueviolet">Top 5 donors :</p></b>
+          <table>
+            <tr>
+              <th>Sr no.</th>
+              <th>Donor</th>
+              <th>Amount</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Maria Anders</td>
+              <td>800000</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Eknath Shinde</td>
+              <td>500000</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Narendra Modi</td>
+              <td>300000</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Devendra Fadnavis</td>
+              <td>200000</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Yash Gokakkar</td>
+              <td>100000</td>
+            </tr>
+          </table>
+        </div> -->
