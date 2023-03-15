@@ -49,8 +49,10 @@
         
       }
     </script>
+    <link rel="stylesheet" href="signup.css">
   </head>
   <body>
+    <h1>Signup</h1>
     <form name="myForm" onsubmit="return validateForm(event)">
       <label for="username">Username : </label>
       <input type="text" name="username" id="username" required /><br />
@@ -60,13 +62,13 @@
       <input type="text" name="country" id="country" required /><br />
       <label for="pin" name="pin">Pincode : </label>
       <input type="text" name="pin" id="pin" required /><br />
+      <label for="email" name="email">Email : </label>
+      <input type="email" name="email" id="email" required /><br />
       <label>Gender : </label>
       <input type="radio" id="male" name="gender" value="Male" />
       <label for="gender">Male</label>
       <input type="radio" id="female" name="gender" value="Female" />
       <label for="gender">Female</label><br />
-      <label for="email" name="email">Email : </label>
-      <input type="email" name="email" id="email" required /><br />
       <input type="submit" value="Submit" />
     </form>
   </body>

@@ -1,0 +1,52 @@
+/* Apply styles to form elements */
+form {
+    width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Apply styles to form error messages */
+  .error {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+
+  h1{
+    text-align: center;
+  }

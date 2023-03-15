@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -135,4 +135,147 @@ footer {
   background-color: #333;
   color: #fff;
 }
+ */
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  height: 100vh;
+  background-image: url('banner.jpg');
+  background-size: cover;
+}
+
+.main_container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: purple;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.main_con {
+  flex: 1;
+  overflow-y: scroll;
+  height: calc(100vh - 90px);
+}
+
+.donate_btn,
+.top_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 60px;
+  margin: 10px;
+  background-color: #009688;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  animation-name: buttonAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.bt1, .bt2{
+  padding: 10px;
+}
+
+.btns{
+  display: flex;
+  flex-direction: row;
+}
+
+.top_btn {
+  background-color: #4caf50;
+}
+
+@keyframes buttonAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.recent_seeker {
+  border: 2px solid red;
+  padding: 20px;
+}
+
+.button {
+  border: 2px solid red;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: purple;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.nav .logo {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav .logo li {
+  display: inline-block;
+}
+
+.nav .logo h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav .opt {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav .opt li {
+  display: inline-block;
+}
+
+.nav .opt a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.nav .opt a:hover {
+  background-color: #333;
+  color: #fff;
+}
