@@ -1,18 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup</title>
-</head>
-<body>
-    <form>
-        <label for="username">Username : </label>
-        <input type="text" name="username" id="username">
-        <label for="password">Password : </label>
-        <input type="password" name="password" id="password">
-        <input type="submit" value="Register">
+    <script>
+      function validateForm(event) {
+        event.preventDefault();
+        let x = document.forms["myForm"]["username"].value;
+        if (x == "") {
+          alert("Name must be entered !!");
+          return false;
+        }
+        if (x.length < 5 || x.length > 7) {
+          alert("Length of username should be between 5-7");
+          return false;
+        }
+        let y = document.forms["myForm"]["password"].value;
+        if (y == "") {
+          alert("Password must be entered !!");
+          return false;
+        }
+        if (y.length < 8 || y.length > 12) {
+          alert("Password length should be 8-12");
+          return false;
+        }
+        let b = document.forms["myForm"]["country"].value;
+        if (b == "") {
+          alert("Country must be entered !!");
+          return false;
+        }
+        let a = document.forms["myForm"]["pin"].value;
+        if (a == "") {
+          alert("Pin code must be entered !!");
+          return false;
+        }
+        if (isNaN(a)) {
+          alert("Enter only numbers in pincode");
+          return false;
+        }
+        if (!/^[a-zA-Z]*$/g.test(document.myForm.username.value)) {
+          alert("Invalid characters");
+          document.myForm.username.focus();
+          return false;
+        }
+        
+        
+      }
+    </script>
+  </head>
+  <body>
+    <form name="myForm" onsubmit="return validateForm(event)">
+      <label for="username">Username : </label>
+      <input type="text" name="username" id="username" required /><br />
+      <label for="password" for="password">Password : </label>
+      <input type="password" name="password" id="password" /><br />
+      <label for="country" name="country">Country : </label>
+      <input type="text" name="country" id="country" required /><br />
+      <label for="pin" name="pin">Pincode : </label>
+      <input type="text" name="pin" id="pin" required /><br />
+      <label>Gender : </label>
+      <input type="radio" id="male" name="gender" value="Male" />
+      <label for="gender">Male</label>
+      <input type="radio" id="female" name="gender" value="Female" />
+      <label for="gender">Female</label><br />
+      <label for="email" name="email">Email : </label>
+      <input type="email" name="email" id="email" required /><br />
+      <input type="submit" value="Submit" />
     </form>
-</body>
+  </body>
 </html>
